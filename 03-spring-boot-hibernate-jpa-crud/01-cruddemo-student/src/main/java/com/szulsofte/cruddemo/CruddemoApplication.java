@@ -21,7 +21,7 @@ public class CruddemoApplication {
 		return runner -> {
 		//	createStudent(studentDAO);
 
-		//	createMultipleStudents(studentDAO);
+		createMultipleStudents(studentDAO);
 
 		//  readStudent(studentDAO);
 
@@ -33,7 +33,7 @@ public class CruddemoApplication {
 
 		// deleteStudent(studentDAO);
 
-		deleteAllStudents(studentDAO);
+		// deleteAllStudents(studentDAO);
 
 		};
 	}
@@ -128,7 +128,7 @@ public class CruddemoApplication {
 
 		// create multiple students
 
-		System.out.println("Crateing 3 student objects...");
+		System.out.println("Creating 3 student objects...");
 		Student tempStudent1 = new Student("Imbir", "Szul", "imbir@szul.com");
 		Student tempStudent2 = new Student("Paulina", "Lacka", "paulina@lacka.com");
 		Student tempStudent3 = new Student("Example", "Person", "example@person.com");
