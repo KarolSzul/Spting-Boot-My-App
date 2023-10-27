@@ -1,4 +1,4 @@
-package com.szulsoft.springboot.cruddemo.entity;
+package com.luv2code.springboot.cruddemo.entity;
 
 import jakarta.persistence.*;
 
@@ -7,23 +7,22 @@ import jakarta.persistence.*;
 public class Employee {
 
     // define fields
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name="id")
     private int id;
 
-    @Column(name = "first_name")
+    @Column(name="first_name")
     private String firstName;
 
-    @Column(name = "last_name")
+    @Column(name="last_name")
     private String lastName;
 
-    @Column(name = "email")
+    @Column(name="email")
     private String email;
 
-    // define constructors
 
+    // define constructors
     public Employee() {
 
     }
@@ -69,7 +68,6 @@ public class Employee {
     }
 
     // define toString
-
     @Override
     public String toString() {
         return "Employee{" +
@@ -80,3 +78,11 @@ public class Employee {
                 '}';
     }
 }
+
+
+
+
+
+
+
+
